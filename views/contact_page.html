@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/Style.css" />
+    <meta charset="UTF-8" />
+    <script defer src="../static/intro.js"></script>
+    <title>contect us</title>
+  </head>
+
+  <body class="web_img">
+    <nav>
+      <ul class="top_nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_page.html">About</a></li>
+        <li><a class="selected-link" href="contact_page.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="header">We would love to hear from you!</h1>
+
+    <p class="per">
+      Whether you are a customer who needs technical help, an association that
+      wants to collaborate with us or you just want to talk.
+      <br />
+
+      We'd love to hear from you by filling out the details here:
+    </p>
+    <hr />
+
+    <div class="contact_container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name"
+        />
+
+        <label for="type">You are a</label>
+        <select id="type" name="type">
+          <option value="association">association</option>
+          <option value="volunteer">volunteer</option>
+        </select>
+
+        <label for="email">Email </label>
+        <input
+          type="text"
+          id="lname"
+          name="email"
+          placeholder="Email to return to"
+        />
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <a href="login_page.html">
+          <input class="styled" type="submit" value="Submit" />
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.web_img {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("image/WebsiteDesktop  .jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#serch_photo {
+  background-image: url("image/search_photo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+ul.top_nav {
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.selected-link {
+  background-color:#e39c9c;
+  color: black;
+}
+
+
+.top_nav a {
+  float: left;
+  display: inline;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "HP Simplified";
+  font-weight: normal;
+}
+
+.welcome {
+  font-family: HP Simplified;
+  text-align: center;
+  margin-top: 130px;
+  color: slategray;
+  font-size: 400%;
+  
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comic Sans";
+  font-size: 300%;
+  margin-top: 130px;
+}
+
+#logo {
+  padding: 10px;
+  margin: 10px 15px;
+  position: relative;
+  animation: mymove 5s 1;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+
+#my-from {
+  text-align: center;
+  padding: 10px 200px;
+}
+
+#home-from {
+  text-align: center;
+  margin-top: 10px;
+}
+#home-from a {
+  text-decoration: none;
+}
+label {
+  display: block;
+  text-align: left;
+  padding: 10px;
+}
+
+.container.from {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.container.from.birthday {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.slogen {
+  color: black;
+  margin-top: 15px;
+  font-family: "HP Simplified";
+  font-size: 200%;
+  text-align: center;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 10px;
+  resize: vertical;
+}
+
+.contact_container {
+  border-radius: 5px;
+  background-color: #fff1de;
+  padding: 50px 10px;
+  margin: 70px;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  line-height: 1.6em;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#login {
+  background-color: #fff1de;
+  line-height: 120%;
+  padding: 0.5%;
+  font-size: 20px;
+
+}
+.my-from.from-group {
+  text-align: center;
+  margin: 30px 30px;
+}
+.my-from {
+  font-family: Arial;
+  margin: 20px 20px;
+  text-align: center;
+  border-radius: inherit;
+}
+
+.my-from label {
+  display: block;
+}
+
+.remember {
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial;
+}
+
+.searching {
+  margin-top: 50px;
+  width: 30%;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 5%;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  background-color: white;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: floralwhite;
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.date {
+  margin-top: 50px;
+  width: 30%;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.container {
+  padding: 16px;
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+}
+
+.profile_container {
+  height: 500px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.background_img {
+  height: 250px;
+  width: 100%;
+  transform: scale(0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 6px solid white;
+  margin-top: 70px;
+  z-index: 123;
+}
+
+.profile_container h1 {
+  background: none;
+  color: #333333;
+  font-size: 25px;
+}
+
+.profile_container p {
+  background: none;
+  text-align: center;
+  transform: scale(0.5);
+  font-size: 20px;
+  font-weight: 400;
+  color: #383838;
+}
+.img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  margin-top: 70px;
+  z-index: 123;
+  margin-left: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.gallery {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.88);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 5px solid white;
+  padding: 1px 1px;
+}
+
+.fromLable {
+  color: black;
+  font-family: "HP Simplified";
+}
+.from-style {
+  color: cornflowerblue;
+  background-color: silver;
+  padding: 10px 30px;
+}
+.container {
+  padding: 16px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.birthday {
+  width: 187px;
+  padding: 12px 20px;
+}
+
+.per {
+  font-size: 18px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+#bd {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+  margin: 0.4rem 0;
+}
+
+.singp {
+  font-weight: bold;
+  margin-left: 4px;
+  font-size: 14px;
+  color: #e39c9c;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: #fff1de;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #e39c9c;
+  padding: 5px;
+  margin: 5%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1% ;
+  font-size: 100%;
+  font-family: Arial;
+
+}
+#eventsTable{
+text-align: center;
+text-shadow: #333333;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Animations */
+
+HTML CSS JSResult Skip Results Iframe EDIT ON #html-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fcd779;
+  border-top: 4px solid white;
+  border-radius: 50%;
+}
+
+#html-spinner,
+#svg-spinner {
+  -webkit-transition-property: -webkit-transform;
+  /* -webkit-transition-duration: 1.2s; */
+  -webkit-animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 1.2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.5);
+}
+
+#html-spinner {
+  left: 25%;
+}
+
+#svg-spinner {
+  left: 75%;
+}
+
+#html-para,
+#svg-para {
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  padding: 5%;
+  text-align: center;
+}
+
+#svg-para {
+  left: 50%;
+}
+
+.logout{
+text-decoration-line: none;
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+color: #e39c9c;
+text-align: right;
+
+}

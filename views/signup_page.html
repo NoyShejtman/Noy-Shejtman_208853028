@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/Style.css" />
+
+    <script type="module" defer src="../static/signup.js"></script>
+
+    <title>sign in</title>
+  </head>
+
+  <body class="web_img" onload='document.form1.text1.focus()'>
+    <nav>
+      <ul class="top_nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_page.html">About</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 class="header">Sign Up</h1>
+      <p class="singp">Please fill in this form to create an account.</p>
+      <hr />
+      <form class="from" name="form1">
+         
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="text1" required />
+    
+
+        <label for="age"><b>age</b></label>
+        <input
+          class="birthday"
+          type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="120"
+          required
+        />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="password"
+          required
+        />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          id="repeat-password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          required
+        />
+      </form>
+    
+
+    <button class="styled" id="register_btn">Sign up</button>
+    </div>
+    
+  </body>
+</html>
